@@ -5,17 +5,21 @@
 
 p, h1,  h2 {
 margin-left:50px;
-
 }
+
+h1{
+    font-weight: bold ;
+}
+
 nav{
     
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px gray solid;
+    
 }
 
-nav img{
+nav p img{
     height: 70px;
     margin-top: 30px;
 
@@ -60,6 +64,7 @@ nav li a:hover {
     font-size: 1em;
     
 }
+
 h2{
         font-size:1.200em;
         padding-left:70px;
@@ -70,15 +75,47 @@ h2{
 
   /*BARRE DE RECHERCHE*/
 
-  .searchbar{
-      margin-top: 40px;
-      margin-left: 50px;
+ 
+  
+
+  #citysearch {
+      position:relative;
+     
+      border-radius:10px 1px 1px 10px;
+      width: 200px;
+      padding: 10px;
+      border-width: 1px;
+      font-size: 20px;
+     
+     
+
       
   }
-  #city-search {
-      position:relative;
-      width: 200px;
-  }   
+
+  .searchbar{
+      display: flex;
+      flex-direction:row;
+      margin-top: 40px;
+      margin-left: 50px;
+      font-size: 20px;
+      border-color: rgba(255,255,255,255);
+      }
+
+ .bottonsearch{
+
+    margin-left: -05px;
+    border-radius:10px;
+    border-width: 1px;
+    font-size: 20px;
+    color:white;
+    background-color:#0065FC ;
+    border: 0;
+    border-radius:0px 10px 10px 0px;
+     }
+      
+      
+ 
+  
 
   /*Les filtres*/
   .filtres li a{
