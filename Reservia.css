@@ -41,15 +41,9 @@ nav li{
 /*Les liens de la nav*/
 nav li a{
     text-decoration: none;
-    color: #248dad;
+    color:#1974fc ;
     font-weight: bold;
-}
-
-nav li a:hover {
-    
-    text-decoration: overline;
-
-}
+}    
 
 .menu_color {
 
