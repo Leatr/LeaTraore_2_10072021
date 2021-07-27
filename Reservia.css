@@ -19,14 +19,13 @@ nav{
     
 }
 
-nav p img{
+p img{
     height: 70px;
     margin-top: 30px;
 
 }
 nav ul{
     display: flex;
-
     list-style: none;
     
 }
@@ -68,20 +67,26 @@ h2{
 
 
   /*BARRE DE RECHERCHE*/
+.icon {
+   background-color:#f2f2f2;
+   border-radius: 20px 0px 0px 20px;
+    
+}
 
- 
-  
+  i{
+      font-size: 20px;
+      padding: 15px 20px 15px 20px;
+    
+  }
 
   #citysearch {
       position:relative;
-     
-      border-radius:10px 1px 1px 10px;
       width: 200px;
       padding: 10px;
-      border-width: 1px;
+      border-width: -5px;
       font-size: 20px;
-     
-     
+      font-weight: bold ;
+      border: 1px #f2f2f2 solid;
 
       
   }
@@ -92,19 +97,19 @@ h2{
       margin-top: 40px;
       margin-left: 50px;
       font-size: 20px;
-      border-color: rgba(255,255,255,255);
+      border: 0;
       }
 
  .bottonsearch{
 
     margin-left: -05px;
     border-radius:10px;
-    border-width: 1px;
+    border-width: 2px;
     font-size: 20px;
     color:white;
     background-color:#0065FC ;
     border: 0;
-    border-radius:0px 10px 10px 0px;
+    border-radius:0px 20px 20px 0px;
      }
       
       
@@ -112,9 +117,51 @@ h2{
   
 
   /*Les filtres*/
-  .filtres li a{
-      text-decoration: none;
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+.filters {
+    display: flex;
+    align-items:center;
+    font-size: 20px;
+    text-align: justify;
+    
+    
+}
+
+.filters > ul {
+    display: flex;
+    justify-content: space-between;  
+    align-items:center;
+    list-style: none;
+    
+   
+    }
+
+    .filters > ul > li {
+        margin: 30px;
+        border: solid black 1px;
+    }
+
+.filters ul a{
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+
+.info{
+    align-items:center;
+    margin-left: 30px;
+    display: flex;
+     }
+
+.info > p
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 180px;
+}
+
+li 
+{
+ border: 10px;
 }
