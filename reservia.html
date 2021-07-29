@@ -1,87 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
 
-        <title>RESERVIA</title>
-        <script src="https://kit.fontawesome.com/db3753d039.js" crossorigin="anonymous"></script>
-        <link rel="Stylesheet" href="Reservia.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,162;0,432;0,508;0,900;1,800&display=swap" rel="stylesheet">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,162;0,432;0,508;0,900;1,800&display=swap');
-    </style>
-    </head>
+<head>
+	<meta charset="UTF-8" />
+	<title>RESERVIA</title>
+	<script src="https://kit.fontawesome.com/db3753d039.js" crossorigin="anonymous"></script>
+	<link rel="Stylesheet" href="Reservia.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,162;0,432;0,508;0,900;1,800&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,162;0,432;0,508;0,900;1,800&display=swap');
+	</style>
+</head>
 
-    <body>
-        <header>
+<body>
+	<header>
+		<nav>
+			<p>
+				<img class="logo" src="C:\Users\yakin\Desktop\p2_ocr\Reservia@3x.png" alt="logo reservia">
+			</p>
+			<ul>
+				<li><a href="#heberhements">Hébergements</a>
+				</li>
+				<li><a class="menu_color" href="#Activites">Activités</a>
+				</li>
+				<li><a href="sinscrire">s'inscrire</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div>
+		
+			<h1>Trouvez votre hébergement pour des vacances de rêve </h1>
+			<h2 class="size_title">En plein centre ville ou pleine nature </h2>
+			
+		</div>
+		<form>
+			<div class="searchbar">
+				<label class="icon" for="icon"> <i class="fas fa-map-marker-alt"></i>
+				</label>
+				<input type="search" id="citysearch" name="recherche" placeholder="rechercher" aria-label="Search through city content">
+				<button class="bottonsearch">Rechercher</button>
+			</div>
+		</form>
+		<div class="filters">
+			<p>Filtres</p>
+			<ul>
+				<li> <i class="fa fa-solid fa-money-bill-wave"></i><a class="hoverfiltrer" href="economique">Economique</a>
+				</li>
+				<li> <i class="fa fa-solid fa-child"></i>  <a class="hoverfiltrer" href="familial">Familial</a>
+				</li>
+				<li> <i class="fa fa-solid fa-heart"></i>  <a class="hoverfiltrer" href="romantique">Romantique</a>
+				</li>
+				<li> <i class="fa fa-solid fa-dog"></i><a class="hoverfiltrer" href="Animaux">Animaux autorisés</a>
+				</li>
+			</ul>
+		</div>
+		<div class=info> <span class="lol"><i class="fa fa-solid fa-info"></i> </span> 
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+		</div>
+	</section>
 
-       
-
-            <nav>
-             <p>
-                <img class="logo" src="C:\Users\yakin\Desktop\p2_ocr\Reservia@3x.png" alt="logo reservia">
-                </p>    
-<ul>
-   
-    <li><a href="#heberhements">Hébergements</a></li>
-    <li><a class="menu_color" href="#Activites">Activités</a></li>
-    <li><a href="sinscrire">s'inscrire</a></li>
-     
-</ul>
-            </nav>
-        </header>
-
-        <section>
-            <div>
-                <p>
-                <h1>Trouvez votre hébergement pour des vacances de rêve </h1></p>
-                 <h2 class="size_title">En plein centre ville ou pleine nature </h2>
-                </p>
-
+    <section id="main">
+        <div class="hotels-container">
+            <div id="tallcontainer">
+                <h2 id="heberhements" class="titlehebergement">Hébergements à Marseille</h2>
+                <section class="hotels">
+                  <a href="#itemhotelclik"><article class="itemhotel"><span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere"></span>
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de
+                            <mark>25€</mark>
+                        </p>
+                    </article></a>
+                    <article class="itemhotel"> <span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port"></span> 
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de
+                            <mark>52€</mark>
+                        </p>
+                    </article>
+                    <article class="itemhotel"> <span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"></span>
+                        <h3>Hôtel les mouettes</h3>
+                        <p>Nuit à partir de
+                            <mark>76€</mark>
+                        </p>
+                    </article>
+                    <article class="itemhotel"> <span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></span>
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de
+                            <mark>46€</mark>
+                        </p>
+                    </article>
+                    <article class="itemhotel"> <span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></span>
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de
+                            <mark>23€</mark>
+                        </p>
+                    </article>
+                    <article class="itemhotel"> <span class="hotelimg"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></span>
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de
+                            <mark>96€</mark>
+                        </p>
+                    </article>
+                    <div>
+                        <botton class="buttonadd">Afficher plus</botton>
+                    </div>
+                </section>
             </div>
-            
-                
-                <form >
-
-                    <div class="searchbar" >
-                       
-
-                    <label class="icon" for="icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </label>
-                    <input type="search" id="citysearch" name="recherche" placeholder="rechercher" 
-       aria-label="Search through city content">
-                    
-       <button class="bottonsearch">Rechercher</button>
-
-             </div>
-                
-                    
-
-                </form>
-
-           
-              <div class="filters">
-            <p>Filtres</p>
-
-                <ul >
-                 
-                    <li class="eco"><a href="economique">Economique</a></li>
-                    <li class="fam"><a href="familial">Familial</a></li>
-                    <li class="rom"><a href="romantique">Romantique</a></li>
-                    <li class="anim"><a href="Animaux">Animaux autorisés</a></li>
-                </ul>
-
+                <div id="tallcontainerpopular">
+                    <section>
+                        <div >
+                            <h2 class="titlemostpopular ">Les plus populaire</h2>
+                            <i class="fa-solid fa-chart-line-up"></i>
+                        </div>
+                        <article class="itemmostpopular">
+                           <span class="hotelimgpopular"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel Le soleil du matin">
+                           </span>
+                           <h3>Hôtel Le soleil du matin</h3>
+                           <p>Nuit à partir de <mark>128€</mark></p>
+                        </article>
+                        <article class="itemmostpopular">
+                           <span class="hotelimgpopular"> <img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                           </span>
+                           <h3>Au coeur de l'eau chambres d'hôtes</h3>
+                           <p>Nuit à partir de <mark>71€</mark></p>
+                        </article>
+                        <article class="itemmostpopular">
+                            <span class="hotelimgpopular"><img src="C:\Users\yakin\Desktop\p2_ocr\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
+                            </span>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de <mark>68€</mark></p>
+                        </article>
+                    </section>
+                </div>
             </div>
+    </section>
+</body>
 
-            <div class=info>
-        
-                <i class="fa fa-solid fa-info"></i>          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-        </section>
-
-        
-    </body>
 </html>

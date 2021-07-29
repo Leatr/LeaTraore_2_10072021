@@ -1,163 +1,255 @@
-*{
-   font-weight: normal; 
+* {
+	font-weight: normal;
 }
-
-
-p, h1,  h2 {
-margin-left:50px;
+p,
+h1,
+h2 {
+	margin-left: 50px;
 }
-
-h1{
-    font-weight: bold ;
+h1 {
+	font-weight: bold;
 }
-
-nav{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
-p img{
-    height: 70px;
-    margin-top: 30px;
-
+p img {
+	height: 70px;
+	margin-top: 30px;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    
+nav ul {
+	display: flex;
+	list-style: none;
 }
-
-nav li{
-    margin:30px 10px 0 50px;
-    font-size: 20px ;
-
-    
+nav li {
+	margin: 30px 10px 0 50px;
+	font-size: 20px;
 }
-
 /*Les liens de la nav*/
-nav li a{
-    text-decoration: none;
-    color:#1974fc ;
-    font-weight: bold;
-}    
 
+nav li a {
+	text-decoration: none;
+	color: #1974fc;
+	font-weight: bold;
+}
 .menu_color {
-
-    color: black;
-
+	color: black;
 }
-
-
 /*LE BODY*/
+
 /*les modifications de h2*/
-.size_title{
-    font-size: 1em;
-    
+
+.size_title {
+	font-size: 1em;
 }
+h2 {
+	font-size: 1.200em;
+	padding-left: 70px;
+	margin: -15px;
+}
+/*BARRE DE RECHERCHE*/
 
-h2{
-        font-size:1.200em;
-        padding-left:70px;
-        margin: -15px;
-      }
-
-
-
-  /*BARRE DE RECHERCHE*/
 .icon {
-   background-color:#f2f2f2;
-   border-radius: 20px 0px 0px 20px;
-    
+	background-color: #f2f2f2;
+	border-radius: 20px 0px 0px 20px;
+	font-size: 20px;
+	padding: 15px 20px 15px 20px;
 }
+#citysearch {
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	border-width: -5px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px #f2f2f2 solid;
+}
+.searchbar {
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	margin-left: 50px;
+	font-size: 20px;
+	border: 0;
+}
+.bottonsearch {
+	margin-left: -05px;
+	border-radius: 10px;
+	border-width: 2px;
+	font-size: 20px;
+	color: white;
+	background-color: #0065FC;
+	border: 0;
+	border-radius: 0px 20px 20px 0px;
+}
+/*Les filtres*/
 
-  i{
-      font-size: 20px;
-      padding: 15px 20px 15px 20px;
-    
-  }
-
-  #citysearch {
-      position:relative;
-      width: 200px;
-      padding: 10px;
-      border-width: -5px;
-      font-size: 20px;
-      font-weight: bold ;
-      border: 1px #f2f2f2 solid;
-
-      
-  }
-
-  .searchbar{
-      display: flex;
-      flex-direction:row;
-      margin-top: 40px;
-      margin-left: 50px;
-      font-size: 20px;
-      border: 0;
-      }
-
- .bottonsearch{
-
-    margin-left: -05px;
-    border-radius:10px;
-    border-width: 2px;
-    font-size: 20px;
-    color:white;
-    background-color:#0065FC ;
-    border: 0;
-    border-radius:0px 20px 20px 0px;
-     }
-      
-      
- 
-  
-
-  /*Les filtres*/
-  
 .filters {
-    display: flex;
-    align-items:center;
-    font-size: 20px;
-    text-align: justify;
-    
-    
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	text-align: justify;
 }
-
+.filters > p {
+	font-weight: bold;
+}
 .filters > ul {
-    display: flex;
-    justify-content: space-between;  
-    align-items:center;
-    list-style: none;
-    
-   
-    }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+.filters > ul > li {
+	margin: 30px;
+	border: solid #d9d9d9 1px;
+	border-radius: 40px 40px 40px 40px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	height: 40px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+.filters > ul > li > i {
+	color: #0065FC;
+	border: 1px solid transparent;
+	border-top: 10px;
+	border-radius: 100px 100px 100px 100px;
+	background-color: #deebff;
+	padding: 20px 20px 20px 20px;
+	margin-right: 10px;
+}
+.filters ul a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.hoverfiltrer:hover {
+	color: rgb(197, 110, 151);
+	font-weight: bold;
+	font-size: 21px;
+}
+/*INFORMATION*/
 
-    .filters > ul > li {
-        margin: 30px;
-        border: solid black 1px;
-    }
-
-.filters ul a{
-    text-decoration:none;
-    color: black;
-    font-weight: bold;
+.info {
+	align-items: center;
+	margin-left: 30px;
+	display: flex;
+	margin-top: -10px;
+}
+.info > p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 180px;
+	margin-top: 10px;
 }
 
-.info{
-    align-items:center;
-    margin-left: 30px;
-    display: flex;
-     }
 
-.info > p
-{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-right: 180px;
+
+
+/*Hebergement*/
+
+.hotels {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px 40px;
+	margin: 0 0px 40px 50px;
+	padding-right: 20px;
 }
 
+#tallcontainer {
+    width: 60%;
+    margin-right: 0px;
+	border: 3px solid rgba(242, 242, 242, 255);
+	background-color: rgba(242, 242, 242, 255);
+	border-radius: 20px 20px 20px 20px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#tallcontainerpopular {
+    width: 35%;
+	border: 3px solid rgba(242, 242, 242, 255);
+	background-color: rgba(242, 242, 242, 255);
+	border-radius: 20px 20px 20px 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+ 
+.hotels-container {
+    display: flex;
+	margin-right: 10px;
+}
+
+
+.titlehebergement {
+	margin-top: 30px;
+	font-weight: bold;
+	height: 60px;
+}
+.itemhotel {
+	border-width: 2px;
+	border: 1px solid #ffffff;
+	border-radius: 30px 30px 30px 30px;
+	box-shadow: 6px 6px 10px #ececec;
+	background-color: #ffffff;
+	width: 90%;
+	height: 85%;
+}
+.hotels > article> h3 {
+	font-weight: bold;
+}
+.itemhotel {
+	padding: 10px;
+}
+.hotelimg {
+	height: 200px;
+}
+.hotelimg > img {
+	border-radius: 30px 30px 0px 0px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.buttonadd {
+	font-weight: bold;
+}
+
+
+
+.titlemostpopular {
+	margin-top: 40px;
+	font-weight: bold;
+	height: 60px;
+}
+
+.itemmostpopular{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;;
+    border-width: 2px;
+	border: 1px solid #ffffff;
+	border-radius: 30px 30px 30px 30px;
+	box-shadow: 6px 6px 10px #ececec;
+	background-color: #ffffff;
+    width: 40%;
+	height: 20%;
+}
+
+ .hotelimgpopular >img {
+    border-radius:30px 0px 0px 30px;
+    width: 97%;
+	height: 200px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+	object-fit: cover;
+}
+
+.itemmostpopular> img > h3 p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
