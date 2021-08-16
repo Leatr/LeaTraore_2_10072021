@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>RESERVIA</title>
 	<script src="https://kit.fontawesome.com/db3753d039.js" crossorigin="anonymous"></script>
 	<link rel="Stylesheet" href="Reservia.css" />
@@ -20,12 +21,19 @@
 			<p>
 				<img class="logo" src="c:/users/yakin/desktop/p2_ocr/reservia@3x.png" alt="logo reservia">
 			</p>
-			<ul>
-				<li><a href="#heberhements">Hébergements</a>
+            <ul class="mobilemenu">
+                <li ><a href="sinscrire">s'inscrire</a></li>
+                <div>
+				<li> <a href="#heberhements">Hébergements</a></li>
+				<li><a class="menu_color" href="#activites">Activités</a></li>
+               </div>
+            </ul>
+			<ul class="desktopmenu">
+				<li ><a href="#heberhements">Hébergements</a>
 				</li>
 				<li><a class="menu_color" href="#activites">Activités</a>
 				</li>
-				<li><a href="sinscrire">s'inscrire</a>
+				<li ><a href="sinscrire">s'inscrire</a>
 				</li>
 			</ul>
 		</nav>
@@ -43,13 +51,14 @@
 				</label>
 				<input type="search" id="citysearch" name="recherche" placeholder="rechercher" aria-label="Search through city content">
 				<button class="bottonsearch">Rechercher</button>
+                <button class="bottonsearchIcone"><i class="fas fa-search"></i></button>
 			</div>
 		</form>
 		<div class="filters">
 			<p>Filtres</p>
 			<ul>
-				<li> <i class="fa fa-solid fa-money-bill-wave"></i><a class="hoverfiltrer" href="economique">Economique</a></li>
-				<li> <i class="fa fa-solid fa-child"></i>  <a class="hoverfiltrer" href="familial">Familial</a></li>
+				<li class="lifilteralign"> <i class="fa fa-solid fa-money-bill-wave"></i><a class="hoverfiltrer" href="economique">Economique</a></li>
+				<li class="lifilteralign"> <i class="fa fa-solid fa-child"></i>  <a class="hoverfiltrer" href="familial">Familial</a></li>
 				<li> <i class="fa fa-solid fa-heart"></i>  <a class="hoverfiltrer" href="romantique">Romantique</a></li>
 				<li> <i class="fa fa-solid fa-dog"></i><a class="hoverfiltrer" href="Animaux">Animaux autorisés</a></li>
 			</ul>
@@ -163,12 +172,12 @@
                  </article>
         
                  <article>
-                  <div class="activitiesitem1" >
-                    <span class="activitiesimg1"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"></span>
+                  <div class="activitiesitem activitiesitem1" >
+                    <span class="activitiesimg activitiesimg1"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"></span>
                      <h3 class="titlecontenairact" >Fort de Pomègues</h3>
                   </div>
-                  <div class="activitiesitem2">
-                    <span class="activitiesimg2" ><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"></span>
+                  <div class="activitiesitem activitiesitem2">
+                    <span class="activitiesimg activitiesimg2" ><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"></span>
                      <h3 class="titlecontenairact">Iles du Frioul</h3>
                   </div>
                  </article>
@@ -180,12 +189,12 @@
                 <h3 class="titlecontenairact">Parc National des Calanques</h3>
             </article>
             <article >
-                 <div class="activitiesitem3">
-                    <span class="activitiesimg3"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"></span>
+                 <div class="activitiesitem activitiesitem3">
+                    <span class="activitiesimg activitiesimg3"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"></span>
                     <h3 class="titlecontenairact" >Notre-Dame-de-la-Garde</h3>
                  </div>
-                 <div class="activitiesitem4">
-                     <span class="activitiesimg4"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></span>
+                 <div class="activitiesitem activitiesitem4">
+                     <span class="activitiesimg activitiesimg4"><img src="C:/Users/yakin/Desktop/p2_ocr/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></span>
                      <h3 class="titlecontenairact">Parc Longchamp</h3>
                  </div>
                </article>
