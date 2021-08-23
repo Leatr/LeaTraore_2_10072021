@@ -529,7 +529,9 @@ nav
 	width: auto;
 	text-align: left;
 }
-
+nav .desktopmenu{
+display: none;
+}
 nav .mobilemenu{
 	display:block;
 }
@@ -537,23 +539,48 @@ nav .mobilemenu{
 nav .mobilemenu div{
 display:flex;
 flex-direction: row;
-margin-left:-230px;
+margin-left:-220px;
 margin-top:20px;
-
 }
+
 nav .mobilemenu div li{
 font-size:17px;
-
+margin-left: -05px;
+padding-left: 40px;
+padding-right:50px;
 }
+
 nav .mobilemenu div li a{
 font-weight: normal;
-border-bottom:5px solid #f2f2f2;
-border-width: 5px ;
+}
+
+.list-menu {
+	padding-left:10px;
+	padding-right: 10px;
+	border-bottom:5px solid #f2f2f2;
+	border-width: 4px ;
+	padding-bottom: 10px;
 
 }
+
+.menuheberg :hover {
+	border-bottom:5px solid #0065FC;
+	color:black;
+	border-width: 4px;
+	margin-left:50px ;
+	
+	
+	
+}
+
+ .menuactivites :hover{
+ 	border-bottom:7px solid #0065FC;
+ 	border-width: 4px;
+	 padding-bottom: 10px;
+}
+
 .mobilemenu div li a:hover{
-  text-decoration:underline;
-  color:blue;
+  color:black;
 }
 nav a
 {
@@ -568,9 +595,13 @@ nav a:hover
 }
 
 .filters {
-
+    margin-top:20px;
 	flex-direction: column;
 	font-size: 20px;
+}
+.filters > div{
+	margin-right: 300px;
+	font-size: 23px;
 }
 
 .filters p {
@@ -580,6 +611,9 @@ nav a:hover
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	margin-left: -200px;
+	margin-right:0;
+	padding-left:0px
 }
 
 .filters  ul  li {
@@ -603,13 +637,16 @@ nav a:hover
 	margin-right: 10px;
 	;
 }
-
+.filters .lifilteralign .lifilteralign {
+	display: flex;
+	
+}
 #citysearch {
 	position: relative;
-	width: 220px;
+	width: 260px;
 	padding: 10px;
 	border-width: 1px;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	border: 1px #f2f2f2 solid;
 }
@@ -620,9 +657,10 @@ nav a:hover
     font-size: 20px;
 	border: 0;
 }
+
 .bottonsearchIcone {
 	display: block;
-	width: 115px;
+	width: 60px;
 	margin-left: -09px;
 	border-radius: 0px;
 	border-width: 0px;
@@ -631,7 +669,7 @@ nav a:hover
 	background-color: #0065FC;
 	border: 0;
 	border-radius: 20px 20px 20px 20px;
-	z-index: 10;
+	z-index: 20;
 	}
 
 .buttonadd > a {
