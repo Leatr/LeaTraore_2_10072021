@@ -20,8 +20,10 @@ body{
 h1 {
 	font-weight: bold;
 }
-nav .mobilemenu{
-	display: none;
+
+.inscriptionMobile{
+display:none;
+
 }
 nav {
 	display: flex;
@@ -184,8 +186,8 @@ h2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px 40px;
-	margin: 0 0px 40px 50px;
-	padding-right: 20px;
+	/* margin: 0 0px 40px 50px;
+	padding-right: 20px; */
 }
 
 /*marge par defaut du navigateur par défaut de l'Hébergement*/
@@ -224,16 +226,16 @@ h2 {
 
 #tallcontainer {
     width: 65%;
-    border: 3px solid rgba(242, 242, 242, 255);
-	background-color: rgba(242, 242, 242, 255);
+    border: 3px #f2f2f2 ;
+	background-color:#f2f2f2;
 	border-radius: 20px 20px 20px 20px;
 	margin-top: 20px;
 }
 
 #tallcontainerpopular {
     width: 30%;
-	border: 3px solid rgba(242, 242, 242, 255);
-	background-color: rgba(242, 242, 242, 255);
+	border: 3px solid transparent;
+	background-color: #f2f2f2;
 	border-radius: 20px 20px 20px 20px;
     margin-left: 70px;
     margin-top: 20px;
@@ -242,7 +244,7 @@ h2 {
  
 .hotels-container {
     display: flex;
-	margin-right: 10px;
+	/* margin-right: 10px; */
 }
 
 
@@ -257,7 +259,7 @@ h2 {
 	border-width: 2px;
 	margin-bottom: 10px;
 	margin-right: 20px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 10px #ececec;
 	background-color: #ffffff;
@@ -308,13 +310,13 @@ h2 {
    flex-direction: row;
     margin-bottom: 30px;
 	border-width: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 10px #ececec;
 	background-color: #ffffff;
-    width: 80%;
+    width: 100%;
 	height: 170px;
-	margin-left: 40px;
+	/* margin-left: 40px; */
 	
 }
 
@@ -406,7 +408,7 @@ mark{
 
 .activitiestallpopular{
 	border-width: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 5px 6px #ececec;
 	background-color: #ffffff;
@@ -426,7 +428,7 @@ mark{
                /*LES PETITS CONTENEURS AVEC DES DIMENSIONS DIFFERENTES*/
 .activitiesitem{
 	border-width: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 10px #ececec;
 	background-color: #ffffff;
@@ -516,17 +518,10 @@ footer > div{
 
 
 /* Mobile version */
-@media screen and (max-device-width: 520px)
+@media screen and (min-width:300px ) and (max-width: 520px) 
 {
 
-body{
-	/* width:400px ; */
-	/* margin:auto;
-	margin-right:30px; */
-	/* margin-left:20px; */
- 
-	
-}
+
 
 nav img{
 	padding-right: 10px;
@@ -536,72 +531,45 @@ h1{
 	font-size: 23px;
 }
 .navItem {
-	/* width: 100%; */
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	padding: 0;
 }
+.desktopmenu li:hover{
+	border-bottom: 3px solid #1974fc;
+
+}
+nav li .menu_overline:hover{
+	display: none;
+		padding:0;
+	}
 .desktopmenu li{
 	width: 50%;
 	margin: 0;
 	border-bottom: 3px solid #f2f2f2;
 	padding-bottom: 10px;
+	text-align: center;
 }
-nav
-{
-
-	flex-direction: column;
+.inscriptionMobile a{
+	text-decoration: none;
+	color: #1974fc;
+	font-weight: bold;
+	
+}
+.inscriptionMobile{
+display:block;
+	
+}
+nav{
+  flex-direction: column;
 	width: auto;
 	text-align: left;
 }
 .inscriptionDesktop{
 display: none;
-}
-nav .mobilemenu{
-	display:block;
-}
-
-nav .mobilemenu div{
-display:flex;
-flex-direction: row;
-margin-left:-220px;
-margin-top:20px;
-}
-
-nav .mobilemenu div li{
-font-size:17px;
-margin-left: -05px;
-padding-left: 40px;
-padding-right:50px;
-}
-
-nav .mobilemenu div li a{
-font-weight: normal;
-}
-
-.list-menu {
-	padding-left:10px;
-	padding-right: 10px;
-	border-width: 4px ;
-	padding-bottom: 10px;
-}
-
-.list-menu li{
-	border-bottom:5px solid #f2f2f2;
-	padding-bottom: 10px;
-	width: 50%;
-	margin-right:0;
-}
-
-.list-menu li:hover {
-	border-bottom:5px solid #0065FC;
-	color:black;
-	border-width: 4px;
-	margin-left:50px ;
-}
-
-.mobilemenu div li a:hover{
-  color:black;
 }
 
 .bottonsearch {
@@ -655,7 +623,7 @@ flex-direction:column-reverse;
 }
 
 .titlehebergement {
-	padding-left: 05px;
+	/* padding-left: 05px; */
    }
    
 .hotels{
@@ -813,7 +781,7 @@ footer > div{
 	}
     .hotels {
 		grid-gap: 20px 20px;
-		margin: 0 0px 20px 20px;
+		/* margin: 0 0px 20px 20px; */
 	}
 
 	#tallcontainer {
@@ -992,6 +960,7 @@ footer > div{
 	.menu_color {
 		color: black;
 }
+
 	.hotels {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -1010,7 +979,7 @@ footer > div{
 		border-width: 2px;
 		margin-bottom: 10px;
 		margin-right: 20px;
-		border: 1px solid #ffffff;
+		border: 1px solid transparent;
 		border-radius: 30px 30px 30px 30px;
 		box-shadow: 6px 6px 10px #ececec;
 		background-color: #ffffff;
@@ -1072,7 +1041,7 @@ footer > div{
 	flex-direction: row;
 	 margin-bottom: 30px;
 	 border-width: 2px;
-	 border: 1px solid #ffffff;
+	 border: 1px solid transparent;
 	 border-radius: 30px 30px 30px 30px;
 	 box-shadow: 6px 6px 10px #ececec;
 	 background-color: #ffffff;
@@ -1094,7 +1063,7 @@ footer > div{
  }
  .activitiestallpopular{
 	border-width: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 5px 6px #ececec;
 	background-color: #ffffff;
@@ -1114,7 +1083,7 @@ footer > div{
                /*LES PETITS CONTENEURS AVEC DES DIMENSIONS DIFFERENTES*/
 .activitiesitem{
 	border-width: 2px;
-	border: 1px solid #ffffff;
+	border: 1px solid transparent;
 	border-radius: 30px 30px 30px 30px;
 	box-shadow: 6px 6px 10px #ececec;
 	background-color: #ffffff;
