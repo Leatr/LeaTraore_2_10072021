@@ -674,11 +674,13 @@
         .hotelimg>img {
             width: 100%;
         }
-        .buttonadd>a {
-            margin-bottom: 10px;
-            padding: 0px 20px 0px 0px;
-            margin-right: 0;
+        .buttonadd {
+            margin-top: 20px;
+            padding-right: 0;
             font-size: 20px;
+        }
+        .buttonadd a{
+            padding:0;
         }
         #tallcontainerpopular {
             width: 100%;
@@ -700,7 +702,7 @@
         }
         .hotelimgpopular>img {
             padding-bottom: 3px;
-            height: 160px;
+            height: 167px;
         }
         .iconmostpopular1 {
             padding-top: 30px;
