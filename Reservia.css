@@ -810,7 +810,7 @@
         }
         .hotels {
             grid-gap: 20px 20px;
-            grid: repeat(3, 30%) / autoflow;
+            grid: repeat(3, 30%) / auto-flow;
 
         }
         #tallcontainer {
